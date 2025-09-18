@@ -107,7 +107,7 @@ export function LeadForm() {
         body: JSON.stringify(formData),
       });
 
-      if (!response.ok) {
+      if (!response.status === 201) {
         throw new Error("Failed to submit lead");
       }
 
