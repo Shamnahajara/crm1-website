@@ -98,7 +98,7 @@ export function LeadForm() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("http://localhost:3015/api/leads", {
+      const response = await fetch("https://crm1.i4interface.com/api/leads", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
