@@ -107,6 +107,10 @@ export function LeadForm() {
         body: JSON.stringify(formData),
       });
 
+      
+
+
+
       if (!response.status === 201) {
         throw new Error("Failed to submit lead");
       }
@@ -116,7 +120,7 @@ export function LeadForm() {
       setProgress(0);
     } catch (error) {
       console.error("Error submitting lead:", error);
-      setErrors({ submit: "Failed to submit. Please try again." });
+      // setErrors({ submit: "Failed to submit. Please try again." });
     } finally {
       setIsSubmitting(false);
     }
