@@ -123,6 +123,8 @@ export function LeadForm() {
       // setErrors({ submit: "Failed to submit. Please try again." });
     } finally {
       setIsSubmitting(false);
+      setFormData({ name: "", email: "", phone: "", company: "", message: "" });
+      setProgress(0);
     }
   };
 
